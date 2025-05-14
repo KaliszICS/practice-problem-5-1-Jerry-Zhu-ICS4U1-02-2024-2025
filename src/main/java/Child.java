@@ -27,7 +27,7 @@ this.parent2 = parent2;
     public void addSibling(Child child){
         Child[] c = new Child[this.siblings.length + 1];
         for(int i = 0; i < this.siblings.length; i++){
-            this.siblings[i] = c[i];
+            c[i] = this.siblings[i];
         } 
         c[this.siblings.length] = child;
         this.siblings = c;

@@ -50,7 +50,7 @@ public class Parent extends Person{
     public void addChild(Child child){
         Child[] c = new Child[this.children.length + 1];
         for(int i = 0; i < this.children.length; i++){
-            this.children[i] = c[i];
+            c[i] = children[i];
         } 
         c[this.children.length] = child;
         this.children = c;
